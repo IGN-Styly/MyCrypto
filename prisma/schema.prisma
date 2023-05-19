@@ -59,7 +59,8 @@ model VerificationToken {
 model wallet {
   id Int @id @default(autoincrement())
   wallet      String  @unique 
-  bal     BigInt
-  tag     String
-  count   Int       
+  bal     Int @default(0)
+  count   Int     @default(0) 
+  @@unique([wallet, id]) 
+  
 }

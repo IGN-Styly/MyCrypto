@@ -4,6 +4,7 @@ import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { AiFillWarning } from 'react-icons/ai';
 import { api } from "~/utils/api";
+import { AlphaWarn } from "~/components/dragons";
 
 
 const Home: NextPage = () => {
@@ -17,15 +18,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-      
-     
-      <div className="inline-block bg-overlay0 rounded-md m-5 p-5 border-yellow border-[4px]">
-       <div className="flex"><div className="p-2"><AiFillWarning size={25} className="text-yellow " /></div>
-       <div className="">
-       Here Be dragons
-        <p>This is still in alpha so expect bugs, crashes.</p>
-       </div>
-        </div></div>
+      <AlphaWarn/>
       
     
             <AuthShowcase />

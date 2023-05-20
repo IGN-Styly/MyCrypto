@@ -1,10 +1,9 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
-import { AiFillWarning } from 'react-icons/ai';
 import { api } from "~/utils/api";
 import { AlphaWarn } from "~/components/dragons";
+import { LoadingPage } from "~/components/loading";
 
 
 const Home: NextPage = () => {
@@ -20,7 +19,7 @@ const Home: NextPage = () => {
       <div className="flex items-center flex-col">
       <AlphaWarn/>
             <AuthShowcase />
-     
+      
       </div>
     </div>
   );

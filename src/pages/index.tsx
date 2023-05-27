@@ -4,6 +4,7 @@ import { signIn, signOut, useSession } from "next-auth/react";
 import { api } from "~/utils/api";
 import { AlphaWarn } from "~/components/dragons";
 import { LoadingPage } from "~/components/loading";
+import { Features } from "~/components/features";
 
 
 const Home: NextPage = () => {
@@ -17,6 +18,17 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex items-center flex-col">
+      <article className="prose lg:prose-xl text-subtext1">
+  <h1 className="text-text">My Crypto</h1>
+  <p>
+    For years i have been searching for an all in one anonymus way to interact with currenc, this is it anonymus with an API, fully F.O.S.S. and blazingly fast miners that use the Rust Languague for 100% safety. 
+  </p>
+  <p>
+    How is it safe? well it ins't, and thats why it's anonymusly centrilized. What if the goverment wants to intervine? we don't record transaction history and any data except data to auth you, the only way for you to be comprimised is your self. What about taxes? only you and the servers know the balance of your wallet, but if the goverment already knows you own the wallet you should alredy be worried.
+  </p>
+  
+</article>
+<Features/>
       <AlphaWarn/>
             <AuthShowcase />
       

@@ -62,7 +62,7 @@ export const authOptions: NextAuthOptions = {
      */
   ],
   theme: {
-    colorScheme: "light", // "auto" | "dark" | "light"
+    colorScheme: "dark", // "auto" | "dark" | "light"
     brandColor: "#b4befe", // Hex color code
     logo: "/logo.png", // Absolute URL to image
     buttonText: "#cdd6f4", // Hex color code

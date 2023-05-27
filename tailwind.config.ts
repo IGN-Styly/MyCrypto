@@ -1,8 +1,14 @@
 import { type Config } from "tailwindcss";
 
 export default {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './**/**/*.{ts,tsx}',
+	],
   theme: {
+      
     extend:{
       
       fontFamily:{
@@ -12,5 +18,6 @@ export default {
   },
   plugins: [
     require('@catppuccin/tailwindcss')({defaultFlavour: 'mocha'}),
+    require('@tailwindcss/typography'),
   ],
 } satisfies Config;

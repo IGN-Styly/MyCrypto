@@ -12,7 +12,8 @@ const NavBar: NextPage = () => {
                 My Crypto
             </Link>
             <Link className="leading-none text-subtext1 hover:text-lavender" href={"/wiki"}>Wiki</Link>
-            <Link className="leading-none text-subtext1 hover:text-lavender" href={"https://ign-styly.xyz"}>Blog</Link>
+            <Link className="leading-none text-subtext1 gover:text-lavender" href={"/software"}>Software</Link>
+            
            
         </div>
         <span className="text-gray-400">{sessionData?.user?.name ? "Welcome, "+sessionData?.user?.name+"!":<></>}</span>

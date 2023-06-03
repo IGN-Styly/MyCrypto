@@ -8,7 +8,6 @@ import { Features } from "~/components/features";
 
 
 const Home: NextPage = () => {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
   return (
     <div>

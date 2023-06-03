@@ -18,7 +18,10 @@ const Wiki: NextPage = () => {
       <AlphaWarn/>
       This is still in developent.
            
-      
+      <body>
+        Hi Poggers
+        <div className="bg-accent">hi</div>
+      </body>
       </div>
     </div>
   );

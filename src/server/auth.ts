@@ -66,6 +66,9 @@ export const authOptions: NextAuthOptions = {
     brandColor: "#b4befe", // Hex color code
     logo: "/logo.png", // Absolute URL to image
     buttonText: "#cdd6f4", // Hex color code
+  },
+  pages: {
+    signIn: '/auth/signin',
   }
 };
 

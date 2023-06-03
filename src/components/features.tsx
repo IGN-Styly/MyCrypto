@@ -1,7 +1,18 @@
 import Link from "next/link"
-import { Icons } from "../components/icons"
+import { Icons } from "@/components/icons"
 import React from "react"
-
+import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogCancel,
+    AlertDialogContent,
+    AlertDialogDescription,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogTitle,
+    AlertDialogTrigger,
+  } from "@/components/ui/alert-dialog"
+import { AlphaWarn } from "./dragons"
 
 const Features = () => {
 
@@ -52,9 +63,24 @@ const Features = () => {
                     <h4 className="text-5xl font-bold text-text">8 UsC</h4>
                     <p className="text-sm font-medium text-subtext1">One time Payement</p>
                 </div>
-                <Link className="text-text rounded-lg bg-overlay0 p-2 hover:bg-overlay1 hover:border-lavender border-base border-[2px]" href={"/pay"}>
-                    Purchase With Universal Secure Curency
-                </Link>
+                <div className="text-text rounded-lg bg-overlay0 p-2 hover:bg-overlay1 hover:border-lavender border-base border-[2px]">
+                <AlertDialog>
+  <AlertDialogTrigger>Purchase With Universal Secure Curency</AlertDialogTrigger>
+  <AlertDialogContent>
+    <AlertDialogHeader>
+      <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+      <AlertDialogDescription>
+        This action cannot be undone. There are no refunds.
+        <AlphaWarn/>
+      </AlertDialogDescription>
+    </AlertDialogHeader>
+    <AlertDialogFooter>
+      <AlertDialogCancel>Cancel</AlertDialogCancel>
+      <AlertDialogAction>Continue</AlertDialogAction>
+    </AlertDialogFooter>
+  </AlertDialogContent>
+</AlertDialog>
+                </div>
             </div>
         </div>
     </section>

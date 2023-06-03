@@ -1,6 +1,8 @@
+
 import { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
+import { DemoCreateAccount } from '~/components/account'
 import { AlphaWarn } from '~/components/dragons'
 import { Features } from '~/components/features'
 
@@ -14,6 +16,7 @@ const Miner: NextPage = ({}) => {
   </Head>
   <div className="flex items-center flex-col">
   <AlphaWarn/>
+  
  <Features/> 
   </div>
 </div>
